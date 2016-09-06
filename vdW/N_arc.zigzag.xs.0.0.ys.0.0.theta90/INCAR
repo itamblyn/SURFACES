@@ -1,0 +1,31 @@
+ NCORE = 16
+
+ PREC    =   High
+
+ ISTART  =   1 # Start at constant energy cutoff
+ ICHARG  =   0 # Charge dens. from initl wavefns
+
+ # vdW
+ LUSE_VDW =   .TRUE.
+ Zab_vdW =   -1.8867
+ AGGAC   =   0.0000
+ GGA     =   ML
+ 
+ NELM    =   40
+ NELMIN  =   2
+ IALGO   =   48
+ LREAL   =   A
+
+ LWAVE   =  .TRUE. 
+ LCHARG  =  .TRUE.
+
+# Insert here additional flags as needed.
+
+ NSW     =   100
+ ISMEAR  =   0
+ SIGMA   =   0.05
+
+# ISIF    =   3 # let the cell and ions relax 
+# ISIF = 7 # let the volume relax
+ ISIF    =   2 # let just the ions move
+ IBRION  =   2
